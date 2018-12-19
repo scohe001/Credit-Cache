@@ -619,6 +619,7 @@ NSDate* calcBalances(NSArray *transactions, double *legacyTotal, double *newTota
         //Set cutoff to a year before the date of this transaction
         NSDate *cutoff = [NSDate dateWithTimeInterval:-31622400 sinceDate:[t date]];
         
+        //Removing legacy really only matters when trying to pay off a purchase, so do it here
         while([[cutoff laterDate:[[earned top] date]] isEqualToDate:cutoff]
               && ![Trans isLegacyDate:[[earned top] date]]) {
             Trans *trans = [earned pop];
@@ -658,21 +659,24 @@ NSDate* calcBalances(NSArray *transactions, double *legacyTotal, double *newTota
             //NSLog(@"Not enough, %.2f left", tot);
         }
     }
+
     
     NSDate *cutoff = [NSDate dateWithTimeIntervalSinceNow:-31622400]; //A year ago today
     bool foundNext = false;
     NSDate *nextExpire = NULL;
     while(![earned empty]) {
         Trans *trans = [earned pop];
-        if([trans type] == RETURN) {
+        bool isExpired = ([[cutoff laterDate:[trans date]] isEqualToDate:cutoff] && ![Trans isLegacyDate:[trans date]]);
+        
+        if([trans type] == RETURN && !isExpired) {
             *returns += [trans value];
-        } else if([trans type] == RESALE) {
+        } else if([trans type] == RESALE && !isExpired) {
             *resales += [trans value];
         }
         
         if([Trans isLegacyDate:[trans date]]) {
             *legacyTotal += [trans value];
-        } else if([[cutoff laterDate:[trans date]] isEqualToDate:cutoff]) {
+        } else if(isExpired) {
             *expired += [trans value];
         } else {
             *newTotal += [trans value];
