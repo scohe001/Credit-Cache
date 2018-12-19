@@ -1,0 +1,1 @@
+Quick note to self: with the introduction of expiring credit, the "balance" and "newBalance" values in the json aren't super trustworthy anymore. I mean granted they were only ever there for easily displaying credit and reading logs...but let's just call them deprecated for now. Beware using them to debug.
