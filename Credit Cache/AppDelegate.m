@@ -610,6 +610,7 @@ NSDate* calcBalances(NSArray *transactions, double *legacyTotal, double *newTota
         if([transaction[@"transaction"] isEqualToString:@"Resale"]) [t setType:RESALE];
         if([transaction[@"transaction"] isEqualToString:@"Return"]) [t setType:RETURN];
         
+        
         //If it's a gain, throw it in the pq
         if([t type] == RETURN || [t type] == RESALE) {
             [earned push:t];
@@ -620,6 +621,21 @@ NSDate* calcBalances(NSArray *transactions, double *legacyTotal, double *newTota
         NSDate *cutoff = [NSDate dateWithTimeInterval:-31622400 sinceDate:[t date]];
         
         //Removing legacy really only matters when trying to pay off a purchase, so do it here
+        PriorityQueue *tmp = [[PriorityQueue alloc] initWithCompare:@selector(transCompare:)];
+        while(![earned empty]) { //Run through all transactions, only adding unexpired to tmp
+            Trans *trans = [earned pop];
+            if([[cutoff laterDate:[trans date]] isEqualToDate:cutoff]
+               && ![Trans isLegacyDate:[trans date]]) {
+                *expired += [trans value];
+            } else {
+                [tmp push:trans];
+            }
+        }
+        [earned clear];
+        while(![tmp empty]) { //Add back all unexpired transactions
+            [earned push:[tmp pop]];
+        }
+        
         while([[cutoff laterDate:[[earned top] date]] isEqualToDate:cutoff]
               && ![Trans isLegacyDate:[[earned top] date]]) {
             Trans *trans = [earned pop];
