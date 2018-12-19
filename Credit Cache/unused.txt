@@ -1,0 +1,69 @@
+-----------------------------
+-ITERATING OVER A DICTIONARY-
+-----------------------------
+
+for (NSString* key in [results allKeys]){
+        NSLog(@"Key: %@, Val: %@", key, [results objectForKey: key]);
+}
+
+-----------------------------
+---------XML PARSING---------
+-----------------------------
+
+@interface AppDelegate() <NSTableViewDelegate>
+@end
+
+NSString *path = [[NSBundle mainBundle]pathForResource:@"Credits" ofType:@"plist"];
+NSAssert(path, @"File does not exist in bundle! Check Target Membership. Or check for exact(!) filename match");
+NSURL *xmlFile = [NSURL fileURLWithPath:path];
+NSAssert(xmlFile, @"Could not create url from path. This should not happen because your problem is most likely in the path ;-)");
+
+/*_rssParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlFile];
+if (_rssParser == nil) NSLog(@"Uh oh...");
+[_rssParser setDelegate:self];
+
+// You may need to turn some of these on depending on the type of XML file you are parsing
+[_rssParser setShouldProcessNamespaces:NO];
+[_rssParser setShouldReportNamespacePrefixes:NO];
+[_rssParser setShouldResolveExternalEntities:NO];
+_good_stuff = false;
+[_rssParser parse];
+
+- (void)parserDidStartDocument:(NSXMLParser *)parser{
+    NSLog(@"File found and parsing started");
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+    _currentElement = [elementName copy];
+    NSLog(@"Name: %@", elementName);
+    _ElementValue = [[NSMutableString alloc] init];
+    if ([elementName isEqualToString:@"item"]) {
+        _item = [[NSMutableDictionary alloc] init];
+    }
+    _good_stuff = ![elementName isEqualToString:@"key"];
+    
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    [_ElementValue appendString:string];
+    if (_good_stuff)
+        NSLog(@"Val: %@", string);
+    _good_stuff = false;
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+    if ([elementName isEqualToString:@"item"]) {
+        [_articles addObject:[_item copy]];
+    } else {
+        [_item setObject:_ElementValue forKey:elementName];
+    }
+    
+}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
+    
+    NSString *errorString = [NSString stringWithFormat:@"Error code %li", (long)[parseError code]];
+    NSLog(@"Error parsing XML: %@", errorString);
+    
+    _errorParsing=YES;
+}

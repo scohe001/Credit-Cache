@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844BDA291E19BDCE00973511 /* PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BDA281E19BDCE00973511 /* PriorityQueue.m */; };
+		844BDA2A1E19BDCE00973511 /* PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 844BDA281E19BDCE00973511 /* PriorityQueue.m */; };
+		84D10E6A18E5F4DA003D5B3C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D10E6918E5F4DA003D5B3C /* Cocoa.framework */; };
+		84D10E7418E5F4DA003D5B3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D10E7218E5F4DA003D5B3C /* InfoPlist.strings */; };
+		84D10E7618E5F4DA003D5B3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D10E7518E5F4DA003D5B3C /* main.m */; };
+		84D10E7A18E5F4DA003D5B3C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84D10E7818E5F4DA003D5B3C /* Credits.rtf */; };
+		84D10E7D18E5F4DA003D5B3C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D10E7C18E5F4DA003D5B3C /* AppDelegate.m */; };
+		84D10E8018E5F4DA003D5B3C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D10E7E18E5F4DA003D5B3C /* MainMenu.xib */; };
+		84D10E8218E5F4DA003D5B3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D10E8118E5F4DA003D5B3C /* Images.xcassets */; };
+		84D10E8918E5F4DA003D5B3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D10E8818E5F4DA003D5B3C /* XCTest.framework */; };
+		84D10E8A18E5F4DA003D5B3C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D10E6918E5F4DA003D5B3C /* Cocoa.framework */; };
+		84D10E9218E5F4DA003D5B3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D10E9018E5F4DA003D5B3C /* InfoPlist.strings */; };
+		84D10E9418E5F4DA003D5B3C /* Credit_CacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D10E9318E5F4DA003D5B3C /* Credit_CacheTests.m */; };
+		84D371FC194E4E0200BC4E8C /* Credits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D371FB194E4E0200BC4E8C /* Credits.plist */; };
+		84D37202194E629700BC4E8C /* Credits.json in Resources */ = {isa = PBXBuildFile; fileRef = 84D37201194E629700BC4E8C /* Credits.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D10E8B18E5F4DA003D5B3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D10E5E18E5F4DA003D5B3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D10E6518E5F4DA003D5B3C;
+			remoteInfo = "Credit Cache";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844BDA261E19B61600973511 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		844BDA271E19B8AD00973511 /* PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriorityQueue.h; sourceTree = "<group>"; };
+		844BDA281E19BDCE00973511 /* PriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriorityQueue.m; sourceTree = "<group>"; };
+		844BDA2B1E19F1A400973511 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		84D10E6618E5F4DA003D5B3C /* Credit Cache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Credit Cache.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D10E6918E5F4DA003D5B3C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84D10E6C18E5F4DA003D5B3C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84D10E6D18E5F4DA003D5B3C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84D10E6E18E5F4DA003D5B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84D10E7118E5F4DA003D5B3C /* Credit Cache-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Credit Cache-Info.plist"; sourceTree = "<group>"; };
+		84D10E7318E5F4DA003D5B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84D10E7518E5F4DA003D5B3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84D10E7718E5F4DA003D5B3C /* Credit Cache-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Credit Cache-Prefix.pch"; sourceTree = "<group>"; };
+		84D10E7918E5F4DA003D5B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		84D10E7B18E5F4DA003D5B3C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84D10E7C18E5F4DA003D5B3C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84D10E7F18E5F4DA003D5B3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84D10E8118E5F4DA003D5B3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84D10E8718E5F4DA003D5B3C /* Credit CacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Credit CacheTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D10E8818E5F4DA003D5B3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84D10E8F18E5F4DA003D5B3C /* Credit CacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Credit CacheTests-Info.plist"; sourceTree = "<group>"; };
+		84D10E9118E5F4DA003D5B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84D10E9318E5F4DA003D5B3C /* Credit_CacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Credit_CacheTests.m; sourceTree = "<group>"; };
+		84D371FB194E4E0200BC4E8C /* Credits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Credits.plist; path = ../Credits.plist; sourceTree = "<group>"; };
+		84D37201194E629700BC4E8C /* Credits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Credits.json; sourceTree = "<group>"; };
+		84D37203194E6CBF00BC4E8C /* unused.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = unused.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D10E6318E5F4DA003D5B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E6A18E5F4DA003D5B3C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D10E8418E5F4DA003D5B3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E8A18E5F4DA003D5B3C /* Cocoa.framework in Frameworks */,
+				84D10E8918E5F4DA003D5B3C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84D10E5D18E5F4DA003D5B3C = {
+			isa = PBXGroup;
+			children = (
+				84D10E6F18E5F4DA003D5B3C /* Credit Cache */,
+				84D10E8D18E5F4DA003D5B3C /* Credit CacheTests */,
+				84D10E6818E5F4DA003D5B3C /* Frameworks */,
+				84D10E6718E5F4DA003D5B3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D10E6718E5F4DA003D5B3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E6618E5F4DA003D5B3C /* Credit Cache.app */,
+				84D10E8718E5F4DA003D5B3C /* Credit CacheTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D10E6818E5F4DA003D5B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E6918E5F4DA003D5B3C /* Cocoa.framework */,
+				84D10E8818E5F4DA003D5B3C /* XCTest.framework */,
+				84D10E6B18E5F4DA003D5B3C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84D10E6B18E5F4DA003D5B3C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E6C18E5F4DA003D5B3C /* AppKit.framework */,
+				84D10E6D18E5F4DA003D5B3C /* CoreData.framework */,
+				84D10E6E18E5F4DA003D5B3C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84D10E6F18E5F4DA003D5B3C /* Credit Cache */ = {
+			isa = PBXGroup;
+			children = (
+				84D371FB194E4E0200BC4E8C /* Credits.plist */,
+				84D10E7B18E5F4DA003D5B3C /* AppDelegate.h */,
+				844BDA261E19B61600973511 /* test.h */,
+				844BDA2B1E19F1A400973511 /* Transaction.h */,
+				844BDA271E19B8AD00973511 /* PriorityQueue.h */,
+				844BDA281E19BDCE00973511 /* PriorityQueue.m */,
+				84D10E7C18E5F4DA003D5B3C /* AppDelegate.m */,
+				84D37201194E629700BC4E8C /* Credits.json */,
+				84D37203194E6CBF00BC4E8C /* unused.txt */,
+				84D10E7E18E5F4DA003D5B3C /* MainMenu.xib */,
+				84D10E8118E5F4DA003D5B3C /* Images.xcassets */,
+				84D10E7018E5F4DA003D5B3C /* Supporting Files */,
+			);
+			path = "Credit Cache";
+			sourceTree = "<group>";
+		};
+		84D10E7018E5F4DA003D5B3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E7118E5F4DA003D5B3C /* Credit Cache-Info.plist */,
+				84D10E7218E5F4DA003D5B3C /* InfoPlist.strings */,
+				84D10E7518E5F4DA003D5B3C /* main.m */,
+				84D10E7718E5F4DA003D5B3C /* Credit Cache-Prefix.pch */,
+				84D10E7818E5F4DA003D5B3C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84D10E8D18E5F4DA003D5B3C /* Credit CacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E9318E5F4DA003D5B3C /* Credit_CacheTests.m */,
+				84D10E8E18E5F4DA003D5B3C /* Supporting Files */,
+			);
+			path = "Credit CacheTests";
+			sourceTree = "<group>";
+		};
+		84D10E8E18E5F4DA003D5B3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84D10E8F18E5F4DA003D5B3C /* Credit CacheTests-Info.plist */,
+				84D10E9018E5F4DA003D5B3C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D10E6518E5F4DA003D5B3C /* Credit Cache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D10E9718E5F4DA003D5B3C /* Build configuration list for PBXNativeTarget "Credit Cache" */;
+			buildPhases = (
+				84D10E6218E5F4DA003D5B3C /* Sources */,
+				84D10E6318E5F4DA003D5B3C /* Frameworks */,
+				84D10E6418E5F4DA003D5B3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Credit Cache";
+			productName = "Credit Cache";
+			productReference = 84D10E6618E5F4DA003D5B3C /* Credit Cache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84D10E8618E5F4DA003D5B3C /* Credit CacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D10E9A18E5F4DA003D5B3C /* Build configuration list for PBXNativeTarget "Credit CacheTests" */;
+			buildPhases = (
+				84D10E8318E5F4DA003D5B3C /* Sources */,
+				84D10E8418E5F4DA003D5B3C /* Frameworks */,
+				84D10E8518E5F4DA003D5B3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D10E8C18E5F4DA003D5B3C /* PBXTargetDependency */,
+			);
+			name = "Credit CacheTests";
+			productName = "Credit CacheTests";
+			productReference = 84D10E8718E5F4DA003D5B3C /* Credit CacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D10E5E18E5F4DA003D5B3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "La Costa Kids";
+				TargetAttributes = {
+					84D10E6518E5F4DA003D5B3C = {
+						LastSwiftMigration = 0810;
+					};
+					84D10E8618E5F4DA003D5B3C = {
+						TestTargetID = 84D10E6518E5F4DA003D5B3C;
+					};
+				};
+			};
+			buildConfigurationList = 84D10E6118E5F4DA003D5B3C /* Build configuration list for PBXProject "Credit Cache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D10E5D18E5F4DA003D5B3C;
+			productRefGroup = 84D10E6718E5F4DA003D5B3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D10E6518E5F4DA003D5B3C /* Credit Cache */,
+				84D10E8618E5F4DA003D5B3C /* Credit CacheTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D10E6418E5F4DA003D5B3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E7418E5F4DA003D5B3C /* InfoPlist.strings in Resources */,
+				84D10E8218E5F4DA003D5B3C /* Images.xcassets in Resources */,
+				84D10E7A18E5F4DA003D5B3C /* Credits.rtf in Resources */,
+				84D371FC194E4E0200BC4E8C /* Credits.plist in Resources */,
+				84D10E8018E5F4DA003D5B3C /* MainMenu.xib in Resources */,
+				84D37202194E629700BC4E8C /* Credits.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D10E8518E5F4DA003D5B3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E9218E5F4DA003D5B3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D10E6218E5F4DA003D5B3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E7D18E5F4DA003D5B3C /* AppDelegate.m in Sources */,
+				844BDA291E19BDCE00973511 /* PriorityQueue.m in Sources */,
+				84D10E7618E5F4DA003D5B3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D10E8318E5F4DA003D5B3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D10E9418E5F4DA003D5B3C /* Credit_CacheTests.m in Sources */,
+				844BDA2A1E19BDCE00973511 /* PriorityQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D10E8C18E5F4DA003D5B3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D10E6518E5F4DA003D5B3C /* Credit Cache */;
+			targetProxy = 84D10E8B18E5F4DA003D5B3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84D10E7218E5F4DA003D5B3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D10E7318E5F4DA003D5B3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84D10E7818E5F4DA003D5B3C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D10E7918E5F4DA003D5B3C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		84D10E7E18E5F4DA003D5B3C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D10E7F18E5F4DA003D5B3C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		84D10E9018E5F4DA003D5B3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D10E9118E5F4DA003D5B3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D10E9518E5F4DA003D5B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84D10E9618E5F4DA003D5B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84D10E9818E5F4DA003D5B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Credit Cache/Credit Cache-Prefix.pch";
+				INFOPLIST_FILE = "Credit Cache/Credit Cache-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "LaCostaKids.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Credit Cache/Credit Cache-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84D10E9918E5F4DA003D5B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Credit Cache/Credit Cache-Prefix.pch";
+				INFOPLIST_FILE = "Credit Cache/Credit Cache-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "LaCostaKids.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Credit Cache/Credit Cache-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84D10E9B18E5F4DA003D5B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Credit Cache.app/Contents/MacOS/Credit Cache";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Credit Cache/Credit Cache-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Credit CacheTests/Credit CacheTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "LaCostaKids.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84D10E9C18E5F4DA003D5B3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Credit Cache.app/Contents/MacOS/Credit Cache";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Credit Cache/Credit Cache-Prefix.pch";
+				INFOPLIST_FILE = "Credit CacheTests/Credit CacheTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "LaCostaKids.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D10E6118E5F4DA003D5B3C /* Build configuration list for PBXProject "Credit Cache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D10E9518E5F4DA003D5B3C /* Debug */,
+				84D10E9618E5F4DA003D5B3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D10E9718E5F4DA003D5B3C /* Build configuration list for PBXNativeTarget "Credit Cache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D10E9818E5F4DA003D5B3C /* Debug */,
+				84D10E9918E5F4DA003D5B3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D10E9A18E5F4DA003D5B3C /* Build configuration list for PBXNativeTarget "Credit CacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D10E9B18E5F4DA003D5B3C /* Debug */,
+				84D10E9C18E5F4DA003D5B3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84D10E5E18E5F4DA003D5B3C /* Project object */;
+}
